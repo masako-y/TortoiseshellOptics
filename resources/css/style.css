@@ -120,3 +120,14 @@ h1 {
 }
 
 /* footer */
+
+footer {
+  background-color: azure;
+  display: flex;
+  align-items: center;
+}
+
+footer img {
+  height: 1.5rem;
+  padding: 4rem 1rem 4rem 4rem;
+}

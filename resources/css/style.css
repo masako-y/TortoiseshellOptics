@@ -33,7 +33,6 @@ nav {
   padding: 1rem 0;
   background-color: cadetblue;
   color: white;
-
   position: relative;
   top: 1rem;
 }
@@ -66,13 +65,58 @@ header .flex {
   justify-content: flex-end;
 }
 
-
 h1 {
   font-weight: bold;
   font-size: 2rem;
   line-height: 1.2;
-
 }
-.flex-container {
 
+/* supporting */
+
+.supporting {
+  display: flex;
+  justify-content: center;
 }
+
+/* service */
+.service {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  height: 8rem;
+  width: 5rem;
+  margin: 3rem;
+}
+
+.service img {
+  width: 5rem;
+  margin-bottom: 1rem;
+}
+
+.paper img {
+  width: 3.5rem;
+}
+
+/* info */
+
+.info {
+  width: 35%;
+  margin-bottom: 5rem;
+  margin-right: 5%;
+}
+
+.title {
+  background-color: cadetblue;
+  color: white;
+  font-weight: bold;
+  max-width: 10rem;
+  padding: 0.5rem 1.25rem;
+}
+
+.info p {
+  margin: 1rem 0;
+}
+
+/* footer */

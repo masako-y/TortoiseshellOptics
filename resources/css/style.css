@@ -37,6 +37,9 @@ nav {
   color: white;
 
 }
+.mobile-nav li {
+  display: none;
+}
 
 .logo img {
   height: 1.5rem;
@@ -45,7 +48,7 @@ nav {
 }
 
 ul li {
-  padding: 1rem 1rem;
+  padding: 0rem 1rem;
   display: inline;
 }
 
@@ -83,9 +86,75 @@ header .flex {
     padding: 0.75rem 4rem;
   }
 
-  h1 .main-banner {
+  .main-banner h1 {
     font-size: 1.33rem;
   }
+
+
+
+}
+
+@media only screen and (max-width: 640px) {
+  header {
+    height: 17rem;
+    background-position: 20%;
+  }
+
+  .main-banner {
+    margin: 9rem auto 0 auto;
+    padding: 1rem 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .main-banner h1 {
+    font-size: 1rem;
+  }
+
+  ul {
+    display: none;
+  }
+
+  .mobile-nav li {
+    display: block;
+  }
+
+  .logo span {
+    display: none;
+  }
+
+  .service {
+    padding-top: 1.54rem;
+  }
+
+  .service span,
+  .info p
+   {
+    font-size: 0.77rem;
+  }
+
+  .info p {
+    padding: 1rem 0 4rem 0;
+  }
+
+  .supporting.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2.23rem;
+  }
+
+  footer p {
+    display: none;
+  }
+
+  footer img {
+    display: flex;
+    justify-content: center;
+  }
+
+
+
 }
 
 h1 {

@@ -1,4 +1,5 @@
 /* universal styles */
+
 html {
   background-color: white;
   font-size: 18px;
@@ -19,6 +20,7 @@ body {
 }
 
 /* header */
+
 header {
   background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/tortoiseshell-optics/resources/images/glasses-bg.png);
   background-repeat: no-repeat;
@@ -69,11 +71,81 @@ header .flex {
   justify-content: flex-end;
 }
 
+h1 {
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 1.2;
+}
+
+/* supporting */
+
+.supporting {
+  display: flex;
+  justify-content: center;
+}
+
+/* service */
+
+.service {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  height: 8rem;
+  width: 5rem;
+  margin: 3rem;
+}
+
+.service img {
+  width: 5rem;
+  margin-bottom: 1rem;
+}
+
+.service img.paper-icon {
+  width: 3.5rem;
+}
+
+/* info */
+
+.info {
+  width: 100%;
+  margin-bottom: 4rem;
+  margin-right: 5%;
+}
+
+.title {
+  background-color: cadetblue;
+  color: white;
+  font-weight: bold;
+  max-width: 10rem;
+  padding: 0.5rem 1.25rem;
+}
+
+.info p {
+  padding: 1rem 0;
+}
+
+/* footer */
+
+footer {
+  width: 100%;
+  background-color: azure;
+  display: flex;
+  align-items: center;
+}
+
+footer img {
+  height: 1.5rem;
+  padding: 4rem 1rem 4rem 4rem;
+}
+
+/* tablet */
+
 @media only screen and (max-width: 1024px) {
   header {
     height: 22rem;
     padding-top: 0;
-
   }
 
   .container {
@@ -90,9 +162,14 @@ header .flex {
     font-size: 1.33rem;
   }
 
+  .info {
+    margin-left: 2rem;
+  }
 }
 
-@media only screen and (max-width: 560px) {
+/* mobile */
+
+@media only screen and (max-width: 480px) {
   header {
     height: 17rem;
     background-position: 20%;
@@ -143,8 +220,9 @@ header .flex {
   }
 
   .info p {
-    padding: 1rem;
+    padding: 1rem 0;
     font-size: 0.77rem;
+    margin-left: 1rem;
   }
 
   .supporting.container {
@@ -152,12 +230,8 @@ header .flex {
     flex-direction: column;
     align-items: center;
     margin-top: 3rem;
-
-  }
-
-  /*.supporting.container .info {
     width: 100%;
-  } */
+  }
 
   footer p {
     display: none;
@@ -166,72 +240,4 @@ header .flex {
   footer {
     justify-content: center;
   }
-
-}
-
-h1 {
-  font-weight: bold;
-  font-size: 2rem;
-  line-height: 1.2;
-}
-
-/* supporting */
-
-.supporting {
-  display: flex;
-  justify-content: center;
-}
-
-/* service */
-.service {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  text-align: center;
-  height: 8rem;
-  width: 5rem;
-  margin: 3rem;
-}
-
-.service img {
-  width: 5rem;
-  margin-bottom: 1rem;
-}
-
-.service img.paper-icon {
-  width: 3.5rem;
-}
-
-/* info */
-
-.info {
-  width: 35%;
-  margin-bottom: 4rem;
-  margin-right: 5%;
-}
-
-.title {
-  background-color: cadetblue;
-  color: white;
-  font-weight: bold;
-  max-width: 10rem;
-  padding: 0.5rem 1.25rem;
-}
-
-.info p {
-  padding: 1rem 0;
-}
-
-/* footer */
-
-footer {
-  background-color: azure;
-  display: flex;
-  align-items: center;
-}
-
-footer img {
-  height: 1.5rem;
-  padding: 4rem 1rem 4rem 4rem;
 }
